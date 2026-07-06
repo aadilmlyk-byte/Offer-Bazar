@@ -6,7 +6,8 @@ font-family:Arial,sans-serif;
 }
 
 body{
-background:#fff8f0;
+background:linear-gradient(135deg,#f8f9fa,#e9f5ff);
+min-height:100vh;
 }
 
 header{
