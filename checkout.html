@@ -30,7 +30,26 @@
 <input type="text" placeholder="State" class="search"><br><br>
 
 <input type="text" placeholder="PIN Code" class="search"><br><br>
+<h2>Order Summary</h2>
 
+<div style="background:#fff;padding:15px;border-radius:10px;margin-bottom:20px;">
+<p><b>Product:</b> <span id="productName"></span></p>
+
+<p><b>Price:</b> ₹<span id="productPrice"></span></p>
+
+<p><b>Delivery:</b> ₹49</p>
+
+<h3>Total: ₹<span id="totalPrice"></span></h3>
+</div>
+
+<script>
+let product = localStorage.getItem("productName");
+let price = Number(localStorage.getItem("productPrice"));
+
+document.getElementById("productName").innerText = product;
+document.getElementById("productPrice").innerText = price;
+document.getElementById("totalPrice").innerText = price + 49;
+</script>
 <h2>Payment</h2>
 
 <p><b>UPI ID:</b> 9103315412@fam</p>
