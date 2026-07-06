@@ -76,6 +76,30 @@ Place Order
 </a>
 <p><a href="success.html">👉 Click Here Test</a></p>
 </div>
+<script>
+function placeOrder(){
 
+    const name = document.querySelector('input[placeholder="Full Name"]').value;
+    const mobile = document.querySelector('input[placeholder="Mobile Number"]').value;
+    const house = document.querySelector('input[placeholder="House / Flat No."]').value;
+    const area = document.querySelector('input[placeholder="Area / Street"]').value;
+    const city = document.querySelector('input[placeholder="City"]').value;
+    const state = document.querySelector('input[placeholder="State"]').value;
+    const pin = document.querySelector('input[placeholder="PIN Code"]').value;
+    const screenshot = document.querySelector('input[type="file"]').files.length;
+
+    if(!name || !mobile || !house || !area || !city || !state || !pin){
+        alert("Please fill all address details.");
+        return;
+    }
+
+    if(screenshot === 0){
+        alert("Please upload payment screenshot.");
+        return;
+    }
+
+    window.location.href = "success.html";
+}
+</script>
 </body>
 </html>
