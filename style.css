@@ -4,12 +4,10 @@ padding:0;
 box-sizing:border-box;
 font-family:Arial,sans-serif;
 }
-
 body{
 background:linear-gradient(135deg,#f8f9fa,#e9f5ff);
 min-height:100vh;
 }
-
 header{
 background:#ff6b00;
 color:#fff;
