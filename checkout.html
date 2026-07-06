@@ -50,17 +50,36 @@ document.getElementById("productName").innerText = product;
 document.getElementById("productPrice").innerText = price;
 document.getElementById("totalPrice").innerText = price + 49;
 </script>
-<h2>Payment</h2>
+<h2 style="margin-top:20px;">💳 Payment Details</h2>
 
-<p><b>UPI ID:</b> 9103315412@fam</p>
+<div style="background:#ffffff;padding:20px;border-radius:15px;box-shadow:0 4px 15px rgba(0,0,0,0.15);margin-bottom:20px;">
 
-<img src="WhatsApp Image 2026-07-06 at 5.39.10 AM.jpeg"
-width="250">
+    <h3 style="color:#ff6600;">Scan & Pay</h3>
 
-<br><br>
+    <img src="upi-qr.jpeg"
+    width="220"
+    style="display:block;margin:15px auto;border-radius:10px;">
 
-<label><b>Upload Payment Screenshot</b></label>
+    <p style="text-align:center;font-size:18px;">
+        <b>UPI ID:</b><br>
+        <span style="color:#ff6600;font-size:20px;">
+            9103315412@fam
+        </span>
+    </p>
 
+    <hr style="margin:20px 0;">
+
+    <h3>📸 Upload Payment Screenshot</h3>
+
+    <input type="file"
+    accept="image/*"
+    style="width:100%;padding:12px;border:2px dashed #ff6600;border-radius:10px;">
+
+    <p style="margin-top:10px;color:green;font-size:14px;">
+        ✅ Upload your payment screenshot after completing the payment.
+    </p>
+
+</div>
 <input type="file">
 
 <br><br>
