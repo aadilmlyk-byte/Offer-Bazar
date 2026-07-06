@@ -101,3 +101,66 @@ cursor:pointer;
 .product-card button:hover{
 background:#e55b00;
 }
+.top-header{
+background:#ff6600;
+padding:15px;
+display:flex;
+flex-direction:column;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,.2);
+}
+
+.logo{
+color:#fff;
+font-size:32px;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.categories{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:10px;
+padding:20px;
+}
+
+.cat{
+background:white;
+padding:15px;
+border-radius:12px;
+text-align:center;
+font-size:18px;
+font-weight:bold;
+box-shadow:0 2px 8px rgba(0,0,0,.15);
+cursor:pointer;
+transition:.3s;
+}
+
+.cat:hover{
+background:#ff6600;
+color:white;
+}
+
+.heading{
+padding:20px;
+font-size:28px;
+font-weight:bold;
+}
+
+.banner{
+background:linear-gradient(135deg,#ff6600,#ff9900);
+color:white;
+margin:20px;
+padding:40px;
+border-radius:15px;
+text-align:center;
+}
+
+.banner h1{
+font-size:38px;
+}
+
+.banner p{
+font-size:20px;
+margin-top:10px;
+}
