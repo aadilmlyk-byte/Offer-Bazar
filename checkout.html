@@ -132,3 +132,30 @@ function placeOrder(){
 
 </body>
 </html>
+<script>
+function continuePayment(){
+
+    const name = document.getElementById("name").value.trim();
+    const mobile = document.getElementById("mobile").value.trim();
+    const house = document.getElementById("house").value.trim();
+    const area = document.getElementById("area").value.trim();
+    const city = document.getElementById("city").value.trim();
+    const state = document.getElementById("state").value.trim();
+    const pin = document.getElementById("pin").value.trim();
+
+    if(!name || !mobile || !house || !area || !city || !state || !pin){
+        alert("Please fill all address details.");
+        return;
+    }
+
+    localStorage.setItem("customerName", name);
+    localStorage.setItem("customerMobile", mobile);
+    localStorage.setItem("customerHouse", house);
+    localStorage.setItem("customerArea", area);
+    localStorage.setItem("customerCity", city);
+    localStorage.setItem("customerState", state);
+    localStorage.setItem("customerPin", pin);
+
+    window.location.href = "payment.html";
+}
+</script>
