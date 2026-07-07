@@ -86,3 +86,23 @@ onclick="placeOrder()"
 style="width:100%;padding:15px;background:#ff6600;color:white;border:none;border-radius:10px;font-size:18px;">
 Place Order
 </button>
+</div>
+
+<script>
+function placeOrder(){
+
+    const screenshot = document.getElementById("paymentScreenshot").files.length;
+
+    if(screenshot === 0){
+        alert("Please upload payment screenshot.");
+        return;
+    }
+
+    // Future Firebase code yahan add hoga
+
+    window.location.href = "success.html";
+}
+</script>
+
+</body>
+</html>
