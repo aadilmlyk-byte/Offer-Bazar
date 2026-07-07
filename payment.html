@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment - Offer Bazar</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+🛍️ Offer Bazar - Payment
+</header>
+
+<div style="max-width:700px;margin:30px auto;background:#fff;padding:25px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.15);">
+
+<h2>🧾 Order Summary</h2>
+
+<div style="background:#f7f7f7;padding:15px;border-radius:10px;">
+
+<p><b>Product :</b> <span id="productName"></span></p>
+
+<p><b>Price :</b> ₹<span id="productPrice"></span></p>
+
+<p><b>Delivery :</b> ₹49</p>
+
+<h2>Total : ₹<span id="totalPrice"></span></h2>
+
+</div>
+
+<script>
+
+const product = localStorage.getItem("productName");
+
+const price = Number(localStorage.getItem("productPrice"));
+
+document.getElementById("productName").innerText = product;
+
+document.getElementById("productPrice").innerText = price;
+
+document.getElementById("totalPrice").innerText = price + 49;
+
+</script>
+
+<br>
+
+<h2>💳 Payment Details</h2>
+
+<div style="background:#fff7ef;padding:20px;border-radius:15px;border:2px solid #ff6600;">
+
+<h3 style="color:#ff6600;">Scan QR & Pay</h3>
+
+<center>
+
+<img src="upi-qr.jpeg" width="220">
+
+<br><br>
+
+<b>UPI ID</b>
+
+<br>
+
+<span style="font-size:22px;color:#ff6600;">
+9103315412@fam
+</span>
+
+</center>
+
+<br>
+
+<label><b>Upload Payment Screenshot</b></label>
+
+<input
+id="paymentScreenshot"
+type="file"
+accept="image/*"
+class="search">
+
+<br><br>
+
+<button
+type="button"
+onclick="placeOrder()"
+style="width:100%;padding:15px;background:#ff6600;color:white;border:none;border-radius:10px;font-size:18px;">
+Place Order
+</button>
